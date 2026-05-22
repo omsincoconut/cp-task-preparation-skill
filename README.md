@@ -1,6 +1,6 @@
 # Competitive Programming Task Preparation Skill
 
-Codex skill for preparing competitive-programming tasks and packages.
+Codex workflow for preparing competitive-programming tasks and packages.
 
 Main focus:
 
