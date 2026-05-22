@@ -102,6 +102,13 @@ Always verify outputs manually.
 
 ---
 
+# Legacy Versions
+
+* Current version: v1.3
+* Older versions are also available (e.g. v1.1 is much lighter than v1.3)
+
+---
+
 # Ending Notes
 
 If you use/improve the workflow, I'd appreciate receiving:
