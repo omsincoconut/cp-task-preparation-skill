@@ -67,15 +67,11 @@ Always verify outputs manually.
 
 * `prompts/INSTRUCTIONS.txt`
 
-  * example task-generation prompt
+  * Contains prompts such as `INSTRUCTIONS.txt`, `post-analysis.txt`, and `skill-delta-creation.txt`
 
-* `prompts/post-analysis.txt`
+* `legacy-versions/`
 
-  * post-session analysis/refinement prompt
-
-* `prompts/skill-delta-creation.txt`
-
-  * workflow for extending `SKILL_DELTA.md`
+  * legacy versions of the skill
 
 ---
 
