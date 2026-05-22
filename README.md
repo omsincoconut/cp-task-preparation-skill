@@ -23,6 +23,8 @@ Typical workflow:
 5. Generate post-session analysis
 6. Batch refinements later
 
+Note: This workflow requires [testlib.h](https://github.com/MikeMirzayanov/testlib/blob/master/testlib.h) by Mike Mirzayanov to be available.
+
 `INSTRUCTIONS.txt` contains an example full-session prompt.
 
 ---
