@@ -1,0 +1,4 @@
+interface:
+  display_name: "CP Task Preparation"
+  short_description: "End-to-end contest task package workflow"
+  default_prompt: "Use $cp-task-preparation to prepare or clean a competitive-programming task package."

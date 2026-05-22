@@ -1,0 +1,9 @@
+[
+  [POINTS, "(TEST_PATTERN)"]
+]
+
+# Notes:
+# - Use Polygon-style test ids such as 01, 02 when writing Polygon scorer summaries.
+# - Use CMS-style test ids such as 001, 002 when writing CMS scorer summaries.
+# - If custom scoring is implemented in code, summarize groups here and document the real protocol in cleaning notes.
+# - Preserve overlap: include a testcase in every subtask group whose constraints it satisfies.
