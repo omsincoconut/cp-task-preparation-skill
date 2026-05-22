@@ -1,6 +1,6 @@
 # Competitive Programming Task Preparation Skill
 
-AI-assisted workflow for preparing competitive-programming tasks and packages.
+Codex skill for preparing competitive-programming tasks and packages.
 
 Main focus:
 
@@ -9,8 +9,6 @@ Main focus:
 * wrong-solution-driven adversarial testing
 * benchmark/verification workflows
 * iterative refinement through session analysis
-
-The workflow is designed around reusable operational methodology rather than one-off prompts.
 
 ---
 
@@ -67,15 +65,15 @@ Always verify outputs manually.
 
   * corrective overlay for recurring model failures
 
-* `INSTRUCTIONS.txt`
+* `prompts/INSTRUCTIONS.txt`
 
   * example task-generation prompt
 
-* `post-analysis.txt`
+* `prompts/post-analysis.txt`
 
   * post-session analysis/refinement prompt
 
-* `skill-delta-creation.txt`
+* `prompts/skill-delta-creation.txt`
 
   * workflow for extending `SKILL_DELTA.md`
 
