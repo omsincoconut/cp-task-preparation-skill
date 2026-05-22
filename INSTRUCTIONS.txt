@@ -1,0 +1,72 @@
+You are operating in a constrained workspace.
+
+**Resource boundaries (hard rules)**
+- Read-only: `libraries/`, `skill/`
+- Read/write: `is_permutation/`
+- Forbidden: read or write any other paths/folders.
+
+Violating these boundaries is a failure.
+
+**Primary instruction**
+Prepare a complete competitive-programming task package end-to-end in `is_permutation/` using the local skill entrypoint at `skill/cp-task-preparation/SKILL.md` as the sole source of packaging conventions, routing, deliverables, and verification workflow.
+
+Do not invent conventions. If something is missing or ambiguous, record uncertainty in the package’s documentation rather than guessing.
+
+Do not modify anything under `skill/` or `libraries/`.
+
+**Task**
+- Name: Check Permutation
+- Platforms to prepare: Polygon + CMS + local
+- Type: Batch (grader-driven); contestants implement a function
+- Contestant interface:
+  ```cpp
+  vector<bool> is_permutation(int N, vector<int> A);
+  ```
+  The i-th returned value answers whether the prefix `A[0..i]` is a permutation of `{0,1,...,i}` (each exactly once).
+
+- Internal input format for graders/tests:
+  ```text
+  N
+  A[0] A[1] ... A[N-1]
+  ```
+
+- Internal output format for graders/tests:
+  - One line containing a binary string of length `N` using characters `0` and `1`.
+  - Position `i` is `1` iff prefix `A[0..i]` is a permutation; otherwise `0`.
+
+- Constraints:
+  - `1 <= N <= 2*10^5`
+  - `0 <= A[i] <= 10^9`
+
+- Subtasks (points + conditions):
+  1) (25 points) `N <= 2000` and `A` is a permutation of `{0,1,...,N-1}`
+  2) (25 points) `N <= 2000`
+  3) (25 points) `A` is a permutation of `{0,1,...,N-1}`
+  4) (25 points) No other constraints
+
+- Limits: TL = `1 s`, ML = `256 MB`
+
+**Testcase generation hint**
+One useful family: start from `A = [0,1,2,...,N-1]` and apply local shuffles on selected contiguous segments to create many “YES” prefixes. You must also include diverse families (duplicates, missing values, large values, adversarial structure), not only this.
+
+**Non-exhaustive list of partial/wrong solutions to target**
+(a) `O(N^2)` per-prefix checking  
+(b) frequency array indexed by `A[i]` without bounds checks (out-of-bounds)  
+(c) checks only duplicates but not min/max/range coverage  
+(d) checks only min/max/range coverage but not duplicates
+
+At least one wrong/partial solution must be included and must be demonstrated (by verification) to fail a documented test.
+
+**Process requirements**
+1) Before implementing anything:
+   - read `skill/cp-task-preparation/SKILL.md`,
+   - output a short plan (5–10 bullets),
+   - output a deliverables list (files/directories you will produce), derived from the skill.
+2) Implement the full package end-to-end following the skill’s workflow.
+3) After implementation, output a “skill compliance audit”:
+   - list the deliverables you created,
+   - for each deliverable, name which skill file(s) justified it (paths only),
+   - explicitly answer yes/no for: CMS scoring metadata present, Polygon generation script present, tests mirrored across platforms as required, and end-to-end verification performed,
+   - list any deviations, uncertainties, or incomplete items.
+
+Stop only when the compliance audit indicates all skill-required deliverables are satisfied (or explicitly marked as uncertain/missing with explanation).

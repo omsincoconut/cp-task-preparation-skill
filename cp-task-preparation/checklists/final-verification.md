@@ -1,0 +1,30 @@
+# Final Verification Checklist
+
+- Package layout matches the intended platform separation.
+- Shared markdown deliverables are under `markdowns/`.
+- Statement and editorial are present and do not contain unverified claims.
+- Statement/editorial math notation uses LaTeX where appropriate; code formatting is reserved for code symbols, filenames, commands, and literal syntax.
+- Validators compile or are clearly documented as unverified.
+- Statement constraints have been reconciled against validators and generated tests.
+- Checkers/interactors compile or are clearly documented as unverified.
+- Model/brute/stress commands are run when available.
+- Expected outputs are generated only by a trusted oracle.
+- `gen_script.txt`, executable generation scripts, promoted tests, and testcase ordering/parameters are synchronized after regeneration.
+- In mixed packages, regenerated tests and answers are mirrored consistently across Polygon/CMS/local folders.
+- Scorer summary matches test naming and point groups, including overlapping subtask membership where valid.
+- CMS `scorer.txt` uses exact array syntax with literal `|`-separated test ids and no prose/comments/regex parentheses.
+- Custom scoring behavior is documented when code implements more than scorer text.
+- Test renaming map is present if tests were renamed.
+- `markdowns/test_description.md` documents testcase intent, subtask membership, generator source, and targeted wrong solutions.
+- `markdowns/run_results.md` records verdict/time/memory behavior for important solutions.
+- `markdowns/wrong_solution.md` and `wrong/` sources are present when wrong-solution analysis shaped tests.
+- Important model, borderline accepted, brute, partial, slow, wrong, and contestant-template implementations have benchmarked solution-by-subtask behavior, or documented reasons why a behavior cannot be tested under the subtask constraints.
+- If constraints, TL, or ML changed, stale-limit audits and regenerated benchmark/verdict matrices were rerun from the canonical constraint owner.
+- Countertests and performance claims include direct-redirection logs or are explicitly labeled as unverified/local artifacts.
+- Statement samples, when present, are first in testcase order.
+- The final testcase count is justified by coverage; remove narrow tests when a stronger combined testcase covers the same purpose.
+- Library-task statements and solutions avoid accidental stdin/stdout framing and unnecessary `main` functions.
+- CMS/local library `task.cpp` files are contestant stubs/templates, not official hidden solutions.
+- Edited local compile scripts such as `compile_and_run.cmd` have been smoke-tested, and their generated executables follow package hygiene rules.
+- Missing components and residual risks are listed.
+- Obsolete `tmp/` binaries, comparison outputs, benchmark leftovers, and scratch files are removed unless explicitly retained.

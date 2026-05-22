@@ -1,0 +1,183 @@
+You are given: [INSERT FILE NAMES HERE]
+
+Edit:
+
+```text
+SKILL_DELTA.md
+````
+
+Adding to it with the given information.
+
+---
+
+# Purpose Of `SKILL_DELTA.md`
+
+`SKILL_DELTA.md` is NOT:
+
+* a replacement skill,
+* a full methodology document,
+* or a copy of the existing skill.
+
+Instead, it is:
+
+* a compact corrective overlay,
+* intended to patch recurring weaknesses of the current model,
+* based on evidence from these sessions.
+
+Future sessions using the main skill will ALSO receive `SKILL_DELTA.md`.
+
+So:
+
+* focus on recurring behavioral corrections,
+* operational enforcement,
+* retrieval/routing fixes,
+* and common failure patterns.
+
+Avoid:
+
+* rewriting the entire skill,
+* duplicating existing methodology,
+* or including one-off task-specific hacks.
+
+---
+
+# Important Routing Rule
+
+If an issue is:
+
+* purely routing-based,
+* retrieval-based,
+* checklist-enforcement-based,
+* template-enforcement-based,
+* or caused by existing guidance not being loaded/applied,
+
+then:
+
+* do NOT restate the full methodology,
+* instead explicitly cite/reference the relevant existing skill files that already contain the correct guidance.
+
+Examples:
+
+* relevant reference files,
+* checklists,
+* templates,
+* routing sections,
+* canonical-owner files.
+
+However:
+
+If the issue is:
+
+* genuinely missing methodology,
+* incomplete methodology,
+* incorrect methodology,
+* or architecture-level weakness,
+
+then:
+
+* write new corrective guidance normally.
+
+The goal is:
+
+* reinforce retrieval/enforcement when the skill already knows the correct thing,
+* rather than duplicating existing content.
+
+---
+
+# What To Extract
+
+Look for:
+
+* repeated mistakes,
+* repeated retrieval failures,
+* repeated execution drift,
+* repeated benchmark misunderstandings,
+* repeated testcase weaknesses,
+* repeated package-convention failures,
+* repeated formatting issues,
+* repeated verification omissions,
+* repeated refinement mistakes,
+* or repeated workflow breakdowns.
+
+Especially prioritize:
+
+* issues that survived despite already-existing skill guidance,
+* operational mistakes caused by weak enforcement,
+* and failures that likely come from current-model behavior rather than missing theory.
+
+---
+
+# Structure Requirements
+
+`SKILL_DELTA.md` should be:
+
+* compact,
+* high-signal,
+* operational,
+* retrieval-friendly,
+* and strongly action-oriented.
+
+Prefer:
+
+* bullet points,
+* short sections,
+* explicit operational reminders,
+* concrete anti-failure guidance.
+
+Avoid:
+
+* long essays,
+* duplicated methodology,
+* architectural redesign,
+* or excessive abstraction.
+
+---
+
+# Important Constraints
+
+* Preserve canonical ownership philosophy.
+* Do not duplicate large chunks of the skill.
+* Do not turn this into another giant workflow manual.
+* Focus on “things the current model tends to get wrong.”
+* Include concrete examples from these sessions when useful.
+* Make the document understandable without knowing the original sessions.
+
+---
+
+# Suggested Topics
+
+Potential categories include:
+
+* testcase generation,
+* subtask separation,
+* benchmark methodology,
+* generator decomposition,
+* scorer semantics,
+* verification completeness,
+* routing/retrieval failures,
+* template enforcement,
+* refinement discipline,
+* constraints synchronization,
+* package hygiene,
+* local grader behavior,
+* operational conventions.
+
+Only include categories actually supported by evidence from the sessions.
+
+---
+
+# Final Goal
+
+The final document should function like:
+
+```text id="70133d"
+“behavioral corrective guidance for future runs of the current model.”
+```
+
+not:
+
+```text id="m91jku"
+“a second copy of the skill.”
+```
+
+```

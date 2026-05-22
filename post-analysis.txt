@@ -1,0 +1,85 @@
+```md
+Write two detailed markdown files inside the current package’s `markdowns/` folder.
+
+---
+
+# 1. `SESSION_SUMMARY.md`
+
+Write a detailed chronological summary of this session.
+
+Include:
+- task goals,
+- package-generation workflow,
+- important design decisions,
+- benchmark investigations,
+- testcase-generation discussions,
+- wrong-solution analysis,
+- subtask-separation reasoning,
+- refinement architecture evolution,
+- retrieval/routing discussions,
+- benchmark/TLE methodology discussions,
+- package-structure changes,
+- and important operational discoveries.
+
+The summary should:
+- preserve technical reasoning,
+- explain why important decisions were made,
+- and remain understandable to someone who did not participate in the session.
+
+Do not merely list commits/changes.
+Capture the reasoning and evolution of the session.
+
+---
+
+# 2. `SKILL_CORRECTIONS.md`
+
+Write a highly detailed skill-refinement and correction document.
+
+Purpose:
+- accumulate reusable lessons from this session,
+- explain what the skill previously lacked or handled poorly,
+- and document what should be improved in future skill updates.
+
+Important:
+- include concrete specifics from this task/problem/session,
+- because future refinement may happen long after this session,
+- and future readers may not know the original context.
+
+The document should:
+- explain the task context clearly,
+- explain the observed failure or weakness,
+- explain why it mattered,
+- explain the corrected methodology,
+- explain the intended canonical owner,
+- and explain whether the issue was:
+  - missing knowledge,
+  - retrieval failure,
+  - checklist failure,
+  - template failure,
+  - execution drift,
+  - or architecture/routing issue.
+
+Focus especially on:
+- testcase methodology,
+- benchmark methodology,
+- subtask separation,
+- weak tests accidentally allowing slow solutions,
+- benchmarking optimized/TLE variants,
+- generator decomposition,
+- scorer semantics,
+- constraints synchronization,
+- refinement workflow evolution,
+- retrieval-quality issues,
+- and operational conventions.
+
+This document should be as detailed as reasonably possible.
+It is intended to support future batched skill updates across multiple sessions.
+
+---
+
+Requirements:
+- Use Markdown with LaTeX formatting conventions.
+- Keep explanations operational and evidence-based.
+- Do not regenerate packages/tests/code unless necessary for the markdown generation itself.
+- Preserve canonical ownership philosophy; this is documentation, not architecture redesign.
+```
