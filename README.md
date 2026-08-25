@@ -1,59 +1,17 @@
 # Competitive Programming Task Preparation Skill
 
-Codex workflow for preparing competitive-programming tasks and packages.
-
-Main focus:
-
-* Polygon + CMS + local package preparation
-* testcase-generation methodology
-* wrong-solution-driven adversarial testing
-* benchmark/verification workflows
-* iterative refinement through session analysis
+AI workflow for preparing competitive-programming tasks and packages for Polygon and CMS.
 
 ---
-
 # Usage
 
-Typical workflow:
+Usage instructions for v1.3
 
-1. Load the main skill
-2. Optionally load `SKILL_DELTA.md`
-3. Run a task-preparation session
-4. Verify outputs carefully
-5. Generate post-session analysis
-6. Batch refinements later
+1. Load the skill.
+2. In the directory where you will build the package, paste [testlib](https://github.com/MikeMirzayanov/testlib) and other reference files.
+3. Call the skill in the directory that you will be building your packages with your task statement and prompts.
 
-Note: This workflow requires [testlib.h](https://github.com/MikeMirzayanov/testlib/blob/master/testlib.h) by Mike Mirzayanov to be available in the workspace.
-
-`INSTRUCTIONS.txt` contains an example full-session prompt.
-
----
-
-# Important Notes
-
-Current CMS support is mainly tested for:
-
-* batch tasks
-* grader/header-style tasks
-* validators/checkers/generators
-* scorer metadata
-
-It is NOT yet well-tested for:
-
-* communication tasks
-* OO managers/stubs
-* advanced interactive CMS infrastructure
-
-The AI may still produce:
-
-* incorrect solutions
-* weak tests
-* incomplete verification
-* broken generators/scripts
-* inconsistent package structures
-* or generally unsatisfactory outputs
-
-Always verify outputs manually.
+Note that v1.3 does not support communication in CMS yet. That support is added in beta-v2.
 
 ---
 
@@ -61,7 +19,15 @@ Always verify outputs manually.
 
 * `cp-task-preparation/`
 
-  * main skill folder
+  * main v1.3 skill folder
+
+* `beta-v2/`
+
+  * beta version. not tested yet.
+  * split into three separate skills: cp-polygon, cp-cms, cp-test-case
+  * added support for communication problems in cms
+  * added instructions on polyman in case you have it installed
+  * added testlib.h and other references into the skill files
 
 * `SKILL_DELTA.md`
 
@@ -73,43 +39,11 @@ Always verify outputs manually.
 
 * `legacy-versions/`
 
-  * legacy versions of the skill
+  * legacy versions (v1.1 and v1.2) of the skill
+  * v1.1 is much lighter than v1.3
 
 ---
 
-## How To Improve The Skill
+# Notes
 
-1. Run real task-preparation sessions.
-
-2. After the session, use `post-analysis.txt` to generate:
-
-* `SESSION_SUMMARY.md`
-* `SKILL_CORRECTIONS.md`
-
-3. For lightweight recurring fixes, update `SKILL_DELTA.md` using:
-
-* `skill-delta-creation.txt`
-
-4. For major changes or batched corrections, modify the main skill itself. The skill already contains some guidelines/infrastructure for skill modification and refinement workflows.
-
-5. Prefer batched refinement over constant small mutations.
-
-6. Always manually verify outputs.
-
----
-
-# Legacy Versions
-
-* Current version: v1.3
-* Older versions are also available (e.g. v1.1 is much lighter than v1.3)
-
----
-
-# Ending Notes
-
-If you use/improve the workflow, I'd appreciate receiving:
-
-* `SESSION_SUMMARY.md`
-* `SKILL_CORRECTIONS.md`
-
-so they can be batched into future refinements.
+I do not own [testlib](https://github.com/MikeMirzayanov/testlib), [polyman](https://github.com/HamzaHassanain/polyman), [codeforces polygon rules](http://codeforces.com/r/authors-polygon-rules), or defs.toml. It is included into the skill file for easier use.
