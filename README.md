@@ -33,7 +33,7 @@ Note that v1.3 does not support communication in CMS yet. That support is added 
 
   * corrective overlay for recurring model failures
 
-* `prompts/INSTRUCTIONS.txt`
+* `prompts/`
 
   * Contains prompts such as `INSTRUCTIONS.txt`, `post-analysis.txt`, and `skill-delta-creation.txt`
 
