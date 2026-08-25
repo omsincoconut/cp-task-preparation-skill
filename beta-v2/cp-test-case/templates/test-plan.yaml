@@ -1,0 +1,24 @@
+contract: cp-test-plan/v1
+task_model: batch
+validity_basis:
+  statement: []
+  semantic: []
+oracles:
+  trusted_full: null
+  small_brute: null
+groups:
+  - id: full
+    promise: "full constraints"
+    points: null
+    depends_on: []
+cases:
+  - id: tiny-exhaustive
+    groups: [full]
+    purpose: "small-domain oracle coverage"
+    construction: "describe platform-neutral construction"
+    scale: "describe bounds"
+    replay: "deterministic; record seed/token if randomized"
+    targets: []
+expected_output_policy: "trusted full oracle only"
+evidence: []
+residual_risk: []

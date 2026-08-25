@@ -1,0 +1,4 @@
+interface:
+  display_name: "CP Polygon"
+  short_description: "Realize Polygon packages and Polyman workspaces"
+  default_prompt: "Use $cp-polygon for Polygon-specific package realization and verification. Apply explicit contest rules first, enforce testlib-only randomness by default, and use $cp-test-case for substantial testcase semantics."

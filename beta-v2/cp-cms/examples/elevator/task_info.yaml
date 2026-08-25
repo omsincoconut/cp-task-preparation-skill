@@ -1,0 +1,16 @@
+name: elevator
+title: Elevator
+time_limit_s: 10.0
+memory_limit_mb: 64
+score_precision: 2
+subtasks:
+- score: 0.0
+  tests: ['1']
+- score: 15.0
+  tests: ['2']
+- score: 35.0
+  tests: ['3']
+- score: 15.0
+  tests: ['4']
+- score: 35.0
+  tests: ['5']

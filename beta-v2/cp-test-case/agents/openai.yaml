@@ -1,0 +1,4 @@
+interface:
+  display_name: "CP Test Case"
+  short_description: "Design platform-independent testcase suites"
+  default_prompt: "Use $cp-test-case to design testcase semantics, adversarial coverage, generator specifications, countertests, stress checks, and benchmarks, then hand off a cp-test-plan/v1 plan to the target platform skill."

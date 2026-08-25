@@ -1,0 +1,4 @@
+interface:
+  display_name: "CP CMS"
+  short_description: "Realize CMS tasks, including Communication"
+  default_prompt: "Use $cp-cms for CMS-specific task realization, loader/scoring integration, graders/managers/stubs, and Communication protocols. Use $cp-test-case for substantial testcase semantics."
