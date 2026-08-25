@@ -26,7 +26,7 @@ Note that v1.3 does not support communication in CMS yet. That support is added 
   * beta version. not tested yet.
   * split into three separate skills: cp-polygon, cp-cms, cp-test-case
   * added support for communication problems in cms
-  * added instructions on polyman in case you have it installed
+  * added instructions on [polyman](https://github.com/HamzaHassanain/polyman) in case you have it installed
   * added testlib.h and other references into the skill files
 
 * `legacy-versions/`
