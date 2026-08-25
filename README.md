@@ -29,18 +29,14 @@ Note that v1.3 does not support communication in CMS yet. That support is added 
   * added instructions on polyman in case you have it installed
   * added testlib.h and other references into the skill files
 
-* `SKILL_DELTA.md`
-
-  * corrective overlay for recurring model failures
-
-* `prompts/`
-
-  * Contains prompts such as `INSTRUCTIONS.txt`, `post-analysis.txt`, and `skill-delta-creation.txt`
-
 * `legacy-versions/`
 
   * legacy versions (v1.1 and v1.2) of the skill
   * v1.1 is much lighter than v1.3
+
+* `SKILL_DELTA.md`
+
+  * corrective overlay for recurring model failures
 
 ---
 
