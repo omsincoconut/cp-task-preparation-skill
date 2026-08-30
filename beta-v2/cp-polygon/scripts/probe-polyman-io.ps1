@@ -39,7 +39,8 @@ try {
     Invoke-Polyman @('--version')
     Invoke-Polyman @('generate', '--testset', $Testset, '--index', $Index)
 
-    $testPath = Join-Path $workspacePath ("testsets\$Testset\test$Index.txt")
+    $testsetDir = Join-Path -Path (Join-Path -Path $workspacePath -ChildPath 'testsets') -ChildPath $Testset
+    $testPath = Join-Path -Path $testsetDir -ChildPath ("test$Index.txt")
     if (-not (Test-Path -LiteralPath $testPath)) {
         throw "Generated test was not found at '$testPath'."
     }
