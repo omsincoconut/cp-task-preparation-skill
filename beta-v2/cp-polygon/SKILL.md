@@ -52,7 +52,7 @@ Do not silently replace a package-pinned `testlib.h` version.
 6. Implement generators with `references/generators.md`; enforce testlib-only randomness by default.
 7. Implement/audit validators, checkers, and interactors with `references/validation.md`.
 8. Audit cross-file limits and wiring with `references/package-consistency.md`.
-9. For Polyman workspaces, use `references/polyman.md` and verify version-sensitive CLI flags with installed `--help` before mutating operations.
+9. For Polyman workspaces, use `references/polyman.md` and verify version-sensitive CLI flags with installed `--help` before mutating operations. On Windows, run `scripts/probe-polyman-io.ps1` against one known generated test before running a full verify or a remote push.
 10. Run `checklists/test-plan-integration.md` and `checklists/final-verification.md` before delivery or remote operations.
 
 ## Remote Operations
