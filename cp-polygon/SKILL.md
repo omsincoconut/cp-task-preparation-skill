@@ -45,15 +45,19 @@ Do not silently replace a package-pinned `testlib.h` version.
 ## Workflow
 
 1. Identify native Polygon vs Polyman and the target contest/rule authority.
-2. Inspect roles with `checklists/package-inspection.md`.
-3. Load Codeforces defaults only when no higher-priority contest rules exist.
-4. If testcase design is substantial, obtain/update a `cp-test-plan/v1` plan with `cp-test-case`.
-5. Map that plan using `references/testset-integration.md` and `templates/test-integration.md`.
-6. Implement generators with `references/generators.md`; enforce testlib-only randomness by default.
-7. Implement/audit validators, checkers, and interactors with `references/validation.md`.
-8. Audit cross-file limits and wiring with `references/package-consistency.md`.
-9. For Polyman workspaces, use `references/polyman.md` and verify version-sensitive CLI flags with installed `--help` before mutating operations. On Windows, run `scripts/probe-polyman-io.ps1` against one known generated test before running a full verify or a remote push.
-10. Run `checklists/test-plan-integration.md` and `checklists/final-verification.md` before delivery or remote operations.
+2. **If using Polyman**, check version with `polyman --version`:
+   - **V3 (3.0.0+)**: Consider using `cp-polyman-v3` skill (built for AI agents with JSON output, compile cache, workspace docs)
+   - **V2 or legacy**: Continue with this skill
+   - **Migrating V2→V3**: See `v3_migration.md` for generator script conversion (JSON arrays → Freemarker text files)
+3. Inspect roles with `checklists/package-inspection.md`.
+4. Load Codeforces defaults only when no higher-priority contest rules exist.
+5. If testcase design is substantial, obtain/update a `cp-test-plan/v1` plan with `cp-test-case`.
+6. Map that plan using `references/testset-integration.md` and `templates/test-integration.md`.
+7. Implement generators with `references/generators.md`; enforce testlib-only randomness by default.
+8. Implement/audit validators, checkers, and interactors with `references/validation.md`.
+9. Audit cross-file limits and wiring with `references/package-consistency.md`.
+10. For Polyman workspaces, use `references/polyman.md` and verify version-sensitive CLI flags with installed `--help` before mutating operations. On Windows, run `scripts/probe-polyman-io.ps1` against one known generated test before running a full verify or a remote push.
+11. Run `checklists/test-plan-integration.md` and `checklists/final-verification.md` before delivery or remote operations.
 
 ## Remote Operations
 
@@ -61,6 +65,7 @@ Never print or package Polygon API secrets. Treat Polyman remote commit/push/pac
 
 ## Reference Map
 
+- **Polyman V3 migration**: `v3_migration.md` — V2→V3 generator script conversion
 - Test-plan interface: `contracts/test-plan-v1.md`
 - Polygon roles/layout: `references/polygon.md`, `references/package-conventions.md`
 - Generator implementation/randomness: `references/generators.md`
